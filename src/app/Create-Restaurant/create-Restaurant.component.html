@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<style>
+    input{
+        width: 110%;
+        background: black;
+    }
+    body{
+        margin-top: 10px;
+        margin-left:30%;
+        margin-right: 30%;
+        background: linear-gradient(rgb(234, 82, 82),rgb(202, 26, 170));
+    }
+/*we are inserted the restaurant details*/
+</style>
+</head>
+<body>
+<div class="col-md-6 offset-md-3">
+    
+    <form (ngSubmit) = "onSubmit()">
+
+
+    
+        <div class="form-group">
+            <label> Restaurant Name</label>
+            <input type="text" class ="form-control" id = "restaurantName"
+                [(ngModel)] = "restaurant.restaurantName" name = "restaurant.restaurantName" placeholder="Enter the Restaurant Name.." maxlength="100">
+        </div>
+
+        <div class="form-group">
+            <label> Owner Name</label>
+            <input type="text" class ="form-control" id = "ownerName"
+                [(ngModel)] = "restaurant.ownerName" name = "restaurant.ownerName" placeholder="Enter the Owner Name.." maxlength="100" >
+        </div>
+
+        <div class="form-group">
+            <label> Food Type</label>
+            <input type="text" class ="form-control" id = "foodtype"
+                [(ngModel)] = "restaurant.foodType" name = "restaurant.foodType" placeholder="Enter the Food Type" maxlength="10">
+        </div>
+        <div class="form-group">
+            <label> Ratings</label>
+            <input type="number" class ="form-control" id = "rating"
+                [(ngModel)] = "restaurant.rating" name = "restaurant.rating">
+        </div>
+        <div class="form-group">
+            <label> Location</label>
+            <input type="url" class ="form-control" id = "location"
+                [(ngModel)] = "restaurant.location" name = "restaurant.location" placeholder="Enter the Location" maxlength="1000">
+                
+        </div>
+        <button class = "btn btn-warning" type ="submit" >Submit</button>
+
+    </form>
+    </div>
+</body>
+
+
+        

@@ -1,0 +1,214 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poppins+sans:300,400,500');
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+.container{
+    min-height:100vh;
+    background: #08071d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container form{
+    width:970px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    box-shadow:20px 20px 50px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+
+}
+.container form h1{
+color:#fff;
+font-weight: 500;
+margin-top:20px;
+width:500px;
+text-align:center;
+}
+.container form input{
+    width:200px;
+    height:40px;
+    padding-left:10px;
+    outline:none;
+    border:none;
+    font-size:15px;
+    margin-bottom:10px;
+    background:none;
+    border-bottom:2px solid #fff;
+
+    
+
+}*/
+
+body {
+    background-color: #d1f3e7;
+  }
+  
+  #title-Tag-Line {
+    font-size: 20px;
+  }
+  /* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } */
+  
+  /* form animation starts */
+  .form {
+    background: rgb(5, 5, 4);
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #c2374c;
+  /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+    
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+  .title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+  }
+  .termsConditions{
+    margin: 0 auto 5px 80px;
+  }
+  
+  .pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .secondaryTitle{
+    color: grey;
+  }
+  
+  .name {
+    background-color: #f0e6e6;
+    color: rgb(16, 5, 5);
+  }
+  /*.name:hover {
+    border-bottom: 5px solid #eff0f0;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }*/
+  
+  .email {
+    background-color: #ebe6e0;
+    height: 2em;
+  }
+  
+ /* .email:hover {
+    border-bottom: 5px solid #f1f5f3;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }*/
+  
+  .message {
+    background-color: #f3e7e7;
+    overflow: hidden;
+    height: 3.5rem;
+  }
+  
+ /* .message:hover {
+    border-bottom: 5px solid #ebf4ef;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+  }*/
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .submit {
+    width: 200px;
+    color: rgb(20, 16, 16);
+    background-color: #64d2f7;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(47, 9, 41, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #2f080e;
+    border-radius: 0%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  } 
+  
+  div{
+    color: #fbf9f9;
+  }
+  button {
+    --c: #fff; /* text color */
+    
+    background: 
+      linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+      #E97F02; /* background color */
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+    text-shadow: 
+      calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+      calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+  }
+  button:hover,
+  button:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+  }
+  button:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+  }
+  
+  
+  button {
+    font-family: system-ui, sans-serif;
+    font-weight:bold;
+    font-size: 4rem;
+    margin: 0;
+    cursor: pointer;
+    padding: .1em .3em;
+  }

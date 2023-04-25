@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("C:\Users\gopik\OneDrive\Desktop\Full Stack Project\RestaturantManagement\src\assets\italian-food-composition-with-big-space-right_23-2147686544 (1).avif");
+  color:antiquewhite;
+}
+
+h1 {
+  color:aliceblue;
+  text-shadow: 2px 2px;
+}
+
+thead{
+  color: Tomato;
+
+}

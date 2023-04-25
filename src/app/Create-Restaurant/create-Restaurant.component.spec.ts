@@ -1,0 +1,24 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { CreateRestaurantComponent } from './create-Restaurant.component';
+
+
+describe('CreateRestaturantComponent', () => {
+  let component: CreateRestaurantComponent;
+  let fixture: ComponentFixture<CreateRestaurantComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ CreateRestaurantComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(CreateRestaurantComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -1,0 +1,54 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control"  placeholder="search by restaturant" [(ngModel)]="restaurantName"/>
+            <button (click)="searchByName()"class="btn btn-outline-secondary" title="search">search</button>
+            <button class="all"><a href="Restaurant">back</a></button>
+                
+        </div>
+    </div>
+</div>
+<button class="btn btn-outline-primary" type="button" (click)="fetchVegHotel()" title="view veg restaurant">
+    Veg Hotel List
+  </button>
+  <button class="btn btn-outline-primary" type="button" (click)="fetchNonVegHotel()" title="view non veg restaurant">
+    NonVeg Hotel List
+  </button>
+<!--here we see the restaurant list and we want to update , delete and view the restaurant list
+    we want to be aware if we  remove ,all the records can't fetch the database again -->
+
+<button  class="bottom-right" *ngIf="restaurant.length!== 0"(click)="removeAllHotels()" title="Delete all">Remove all</button>
+<table class = "table table-borderless">
+    <thead>
+        <tr>
+            <th title="Restaurant Name"> Restaurant Name</th>
+            <th title="Owner Name"> owner Name </th>
+            <th title="Food Type"> FoodType </th>
+            <th title="Rating"> rating</th>
+            <th title="Location"> location </th>
+            <th title="Actions">Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let eachRestaurant of restaurant" >
+            <td> {{ eachRestaurant.restaurantName }} </td>
+            <td> {{ eachRestaurant.ownerName }} </td>
+            <td> {{ eachRestaurant.foodType}} </td>
+            <td> {{ eachRestaurant.rating}}</td>
+            <td><a href="{{ eachRestaurant.location}}"><i class="material-icons">my_location</i></a></td>
+            
+            <td>
+                <button (click) = "updateRestaurant(eachRestaurant.hotelId)" class = "btn btn-info" title="update"> Edit</button>
+                <button (click) = "confirmDelete(eachRestaurant)" class = "btn btn-danger" style="margin-left: 10px" title="remove"> Delete</button>
+                <button (click) = "restaurantDetails(eachRestaurant.hotelId)" class = "btn btn-info" style="margin-left: 10px" title="Display"> View</button>
+
+            </td>
+        </tr>
+        <tr scope="row" *ngIf="restaurant.length === 0">
+            <td colspan="5" class="text-center">No records found</td>
+         </tr>
+    </tbody>
+</table>
+

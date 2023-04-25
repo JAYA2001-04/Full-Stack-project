@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display==swap');
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu',sans-serif;
+  }
+  body{
+    overflow: hidden;
+    
+  }
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:130px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:linear-gradient( #630d43,rgb(140, 17, 39));
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #150e13;
+  }
+  div{
+    margin-left: 30%;
+    margin-top: 8%;
+  }
+  table{
+    background-color: rgb(224, 225, 131);
+
+  }
+p{
+    color:black;
+}
+img{
+    width:200%;
+}
+tfoot{
+    background-color:rgb(224, 225, 131) ;
+}
+h1{
+  color: rgb(110, 23, 23);
+}

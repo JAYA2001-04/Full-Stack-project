@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login From</title>
+</head>
+<!--we are cretaing login page to enter the user credential-->
+<body>
+    <div class="container">
+        <div class="login">
+            <form id="login-form">
+                <h1>Login</h1>
+                <hr>
+                <label for="text">Name</label>
+                <input type="text" placeholder="Enter the name..." name="username" required="required" [(ngModel)]="username">
+                <label for="password">Password </label>
+                <input type="password" placeholder="Enter the Password..." name="password" required="required" [(ngModel)]="password"  >
+
+
+
+                <button (click)=checklogin() class="btn btn-success"><span>Submit</span></button>
+                <p><a href="registrationpage">Go to RegistrationPage</a></p>
+            </form>
+        </div>
+        <div class="pic" align="center">
+            <img src=".\assets\Delivery-PNG-HD.png" alt="Restaurant" style="width:100%" height=100%>
+        </div>
+    </div>
+</body>
+
+</html>

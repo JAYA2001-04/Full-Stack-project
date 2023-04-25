@@ -1,0 +1,12 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("C:\Users\gopik\OneDrive\Desktop\Full Stack Project\RestaturantManagement\src\assets\vivid_food_icons_vector_536507.jpg");
+}
+img{
+    width:50%;
+    margin-left: 25%;
+    margin-right: 20%;
+    align-items: center;
+    justify-content: center;
+}

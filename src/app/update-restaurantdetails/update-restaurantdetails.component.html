@@ -1,0 +1,54 @@
+<head>
+    <style>
+        input{
+            width: 110%;
+            background: rgb(26, 201, 216);
+        }
+        body{
+            margin-top: 10px;
+            margin-left:30%;
+            margin-right: 30%;
+            background: orange;
+        }
+    
+    </style>
+</head>
+<body>
+    <!--Update the restaurant details for restaurant name,foodtype and location by Two way binding-->
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label> Restaurant Name</label>
+            <input type="text" class ="form-control" id = "restaurantName"
+                [(ngModel)] = "restaurant.restaurantName" name = "restaurantName"placeholder="Edit the Restaurant Name..">
+        </div>
+
+        <div class="form-group">
+            <label> Owner Name</label>
+            <input type="text" class ="form-control" id = "ownerName"
+                [(ngModel)] = "restaurant.ownerName" name = "ownerName"placeholder="Edit the Owner Name..">
+        </div>
+
+        <div class="form-group">
+            <label> Food Type</label>
+            <input type="text" class ="form-control" id = "foodtype"
+                [(ngModel)] = "restaurant.foodType" name = "foodType" placeholder="Edit the Food Type" maxlength="10">
+        </div>
+        <div class="form-group">
+            <label> Ratings</label>
+            <input type="number" class ="form-control" id = "rating"
+                [(ngModel)] = "restaurant.rating" name = "rating" maxlength="1">
+        </div>
+        <div class="form-group">
+            <label> Location</label>
+            <input type="url" class ="form-control" id = "location"
+                [(ngModel)] = "restaurant.location" name = "location"placeholder="Edit the Location...." >
+        </div>
+        <button class = "btn btn-success" type ="submit">Submit</button>
+
+    </form>
+    </div>
+    </body>
+
+        

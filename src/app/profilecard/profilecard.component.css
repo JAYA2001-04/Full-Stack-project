@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+sans:300,400,500');
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Josefin Sans',sans-serif;
+  }
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5cm;
+    margin-right: 40%;
+    margin-left: 45%;
+    height:50%;
+    width:10%;
+    background: #3b3434;
+  }
+  .container{
+    position: relative;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    box-shadow: 0 20px 35px red;
+    background-color: rgb(235, 227, 230);
+  }
+  .container .cards{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#831219,#f5d87b 30%,#851f78 30%,#1d3548);
+    margin: 10px;
+    border-radius: 20px;
+    overflow:hidden;
+  }
+  .container .cards .imgbx{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index:100000;
+    border-radius: 20px;
+    overflow:hidden;
+    transform-origin: top;
+
+  }
+  .container .cards:hover .imgbx{
+    transform: translateY(30px) scale(0.5);
+  }
+  .container .cards.imgbx.img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+  }
+  .container .cards .content{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+   padding-bottom: 30px;
+    transform: translateY(100%);
+
+  }
+  .container .cards:hover .content{
+    transform: translateY(0);
+  }
+  .container .cards .content .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .cards .content .details h2{
+    color:#070707;
+    text-shadow: 1px 1px;
+    font-size: 0.8cm;
+    font-weight: 500;
+  }
+  .container .cards .content .details h2 span{
+    font-size: 0.5cm;
+    font-weight: 400;
+    color:#c7d47d;
+  
+  }
+ .social_icons{
+  position: relative;
+  display: flex;
+  margin-top: 5px;
+
+  }
+  .social_icons li{
+    list-style: none;
+    margin: 8px;
+  }
+  .social_icons li a{
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1a71d;
+    border-radius: 50%;
+    font-size: 0.5cm;
+    color: #5a1616;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .social_icons li a:hover{
+    transform:rotate(360deg);
+  }

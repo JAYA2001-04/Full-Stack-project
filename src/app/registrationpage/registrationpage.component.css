@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins+sans:300,400,500');
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(red,rgb(18, 18, 57),rgb(140, 18, 101));
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 80vh;
+    border: 5px solid white;
+    box-shadow: 0 20px 35px rgb(99, 245, 245);
+
+  }
+  .container{
+    position: relative;
+    width: 256px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  
+
+  .Signin-box{
+    position: absolute;
+    width: 400px;
+    /*background:red;*/
+  }
+  .Signin-box form{
+    width:100%;
+    padding: 0 50px;
+  }
+  h2{
+    font-size: 1cm;
+    color:aqua;
+    text-align: center;
+  }
+  .input-box{
+    position: relative;
+    margin: 25px 0;
+  }
+  .input-box input{
+    width:100%;
+    height:50px;
+    background: transparent;
+    border: 2px solid #57badb20;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1cm;
+    color: #fff;
+    padding: 0 20px;
+    transition: .5s ease;
+  }
+  .input-box label{
+    position: absolute;
+    top:50%;
+    left:20px;
+    transform: translateY(-60%);
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s ease;
+  }
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top:1px;
+    font-size: .3cm;
+    background: rgb(18, 17, 17);
+    padding: 0 6px;
+    color:#0ef;
+  } 
+  .input-box input:focus,
+  .input-box input:valid{
+    border-color:#0ef;
+  }
+  .btn{
+    width:100%;
+    height: 45px;
+    background: rgb(114, 245, 245);
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor:pointer;
+    font-size: 20px;
+    color:#0c0805;
+    font-weight: 600;
+    text-decoration: none;
+  }

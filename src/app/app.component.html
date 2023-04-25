@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Here we are creating a navition bar to homepage,login,logout,aboutus,Restaurant list and profileCard-->
+
+<nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a title="HomePage" *ngIf="loginService.isUserLoggedIn()" routerLink="homepage" routerLinkActive="active" class="nav-link"><i class="fas fa-home navbar__icon" ></i>
+        HomePage</a>
+    </li>
+    <li class="nav-item">
+      <a title="Restaurant List" *ngIf="loginService.isUserLoggedIn()" routerLink="Restaurant" routerLinkActive="active" class="nav-link"><i class="fa fa-list navbar__icon"></i> Restaurant List</a>
+    </li>
+    <li class="nav-item">
+      <a title="add Restaurant"*ngIf="loginService.isUserLoggedIn()" routerLink="create-Restaurant" routerLinkActive="active" class="nav-link"><i class="fa fa-user navbar__icon"></i> Add Restaurant</a>
+    </li>
+    <li class="nav-item ">
+      <a title="profile card" *ngIf="loginService.isUserLoggedIn()" routerLink="profilecard" routerLinkActive="active" class="nav-link"><i class="fa fa-id-badge navbar__icon"></i> Profile Card</a>
+    </li>
+    <li class="nav-item ">
+      <a title="Aboutus" *ngIf="loginService.isUserLoggedIn()" routerLink="aboutus" routerLinkActive="active" class="nav-link"><i class="fas fa-user navbar__icon"></i>
+        AboutUs</a>
+    </li>
+
+    <li class="nav-item ">
+      <a title="Login"*ngIf="!loginService.isUserLoggedIn()" routerLink="login-page" routerLinkActive="active" class="nav-link">Login</a>
+    </li>
+
+
+  </ul>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a title="logout" *ngIf="loginService.isUserLoggedIn()" (click)="confirmLogout()" routerLink="logout" routerLinkActivate="active" class="nav-link" style="font-size:15px"><i class="fa fa-sign-out navbar__icon"></i>Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+
+</nav>
+
+<h1 class="text-center"> {{title}} </h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,initial-scale-1.0">
+    <title>Animated SignUp form using html css only</title>
+<!--here we are creating registration page for new user -->
+  </head>
+  <body>
+    <div class="container">
+    <div class="Signin-box">
+      <h2>SIGN UP</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" name="Name"[(ngModel)]="Name">
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <input type="password" name="password"  [(ngModel)]="password">
+          <label>password</label>
+        </div>
+        <div class="input-box">
+          <input type="email" name="email"[(ngModel)]="email">
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="phone" name="phonenumber" [(ngModel)]="phonenumber">
+          <label>Phonenumber</label>
+        </div>
+        <div>
+          <button type="submit" class="btn" (click)="Register()">SignUp</button>
+        </div>
+
+
+      </form>
+      </div>
+      </div>
+  </body>
+</html>
